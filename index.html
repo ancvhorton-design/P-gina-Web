@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Página Estética</title>
+    <title>Angela Horton</title>
     <style>
         body {
             font-family: "Poppins", sans-serif;
-            background: #f7eaff;
+            background: url('https://i.pinimg.com/736x/1c/9a/08/1c9a08478b5d9275480bec219c2f4784.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             color: #4a2e5c;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: linear-gradient(135deg, #d8a7ff, #fda6e0);
+            background: rgba(216, 167, 255, 0.8);
             padding: 2rem;
             text-align: center;
             color: white;
@@ -32,16 +35,10 @@
         section {
             max-width: 900px;
             margin: 2rem auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        img {
-            width: 100%;
-            border-radius: 15px;
-            margin: 1rem 0;
         }
 
         a {
@@ -61,11 +58,6 @@
             font-weight: 600;
         }
 
-        ul {
-            list-style: square;
-            padding-left: 1.5rem;
-        }
-
         footer {
             text-align: center;
             padding: 1.5rem;
@@ -73,55 +65,48 @@
             font-size: 0.9rem;
             margin-top: 3rem;
         }
+
+        textarea {
+            width: 100%;
+            border-radius: 10px;
+            padding: 1rem;
+            border: 1px solid #d8a7ff;
+        }
+
+        button {
+            padding: 0.7rem 1.5rem;
+            background: #d8a7ff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página Estética ✨</h1>
-        <p>Un diseño suave, femenino y estilo Pinterest 💜💖</p>
+        <h1>Angela Horton</h1>
+        <p>Bienvenidos a mi página de anécdotas, poemas y un poco de todo 💜💖</p>
     </header>
 
     <nav>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#comentarios">Comentarios</a>
     </nav>
 
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>
-            Hola! Esta es una página creada como parte de mi proyecto final. Aquí practico HTML, Git y GitHub Pages
-            mientras diseño algo bonito y estético.
+            Hola, espero te encuentres seguro, en este espacio te guste lo que leas y con gusto esperaré tu opinión.
         </p>
     </section>
 
-    <section id="galeria">
-        <h2>Galería Estética 💗</h2>
-        <p>Algunas imágenes estilo Pinterest que combinan con el diseño:</p>
-
-        <img src="https://i.pinimg.com/736x/52/77/17/527717463919b69f1abe79953318ed06.jpg" alt="Estética 1" />
-        <img src="https://i.pinimg.com/736x/02/4d/f4/024df408a4c1ca6aab80a3db4f2a4b75.jpg" alt="Estética 2" />
-        <img src="https://i.pinimg.com/736x/59/61/bb/5961bb08d4a6fbfcdc9d2330a35db698.jpg" alt="Estética 3" />
-
-        <p>Si quieres ver más imágenes bonitas, visita <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.</p>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si deseas enviarme un mensaje, completa este pequeño formulario:</p>
-
-        <form>
-            <label>Nombre:</label><br />
-            <input type="text" placeholder="Escribe tu nombre" /><br /><br />
-
-            <label>Correo:</label><br />
-            <input type="email" placeholder="nombre@correo.com" /><br /><br />
-
-            <label>Mensaje:</label><br />
-            <textarea placeholder="Escribe tu mensaje" rows="4"></textarea><br /><br />
-
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="comentarios">
+        <h2>Coloca aquí tu comentario 🌸</h2>
+        <p>Escribe lo que opinas sobre lo que has leído:</p>
+        <textarea placeholder="Coloca aquí tu comentario" rows="5"></textarea><br /><br />
+        <button>Enviar</button>
     </section>
 
     <footer>
