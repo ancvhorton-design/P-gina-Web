@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Estética</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f7eaff;
+            color: #4a2e5c;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d8a7ff, #fda6e0);
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: #8a4baa;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 1rem 0;
+        }
+
+        a {
+            color: #b24ac7;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #4a2e5c;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #4a2e5c;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hola, esta es mi página web!</h1>
-    <p>Práctica de HTML, Git y GitHub.</p>
+    <header>
+        <h1>Mi Página Estética ✨</h1>
+        <p>Un diseño suave, femenino y estilo Pinterest 💜💖</p>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+            Hola! Esta es una página creada como parte de mi proyecto final. Aquí practico HTML, Git y GitHub Pages
+            mientras diseño algo bonito y estético.
+        </p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería Estética 💗</h2>
+        <p>Algunas imágenes estilo Pinterest que combinan con el diseño:</p>
+
+        <img src="https://i.pinimg.com/736x/52/77/17/527717463919b69f1abe79953318ed06.jpg" alt="Estética 1" />
+        <img src="https://i.pinimg.com/736x/02/4d/f4/024df408a4c1ca6aab80a3db4f2a4b75.jpg" alt="Estética 2" />
+        <img src="https://i.pinimg.com/736x/59/61/bb/5961bb08d4a6fbfcdc9d2330a35db698.jpg" alt="Estética 3" />
+
+        <p>Si quieres ver más imágenes bonitas, visita <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas enviarme un mensaje, completa este pequeño formulario:</p>
+
+        <form>
+            <label>Nombre:</label><br />
+            <input type="text" placeholder="Escribe tu nombre" /><br /><br />
+
+            <label>Correo:</label><br />
+            <input type="email" placeholder="nombre@correo.com" /><br /><br />
+
+            <label>Mensaje:</label><br />
+            <textarea placeholder="Escribe tu mensaje" rows="4"></textarea><br /><br />
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        Página creada para mi Proyecto Final ✨ — HTML + Git + GitHub Pages
+    </footer>
 </body>
 </html>
